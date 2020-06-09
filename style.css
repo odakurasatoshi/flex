@@ -1,18 +1,61 @@
-.flex{
-	background-color: #00c7ce;
-	height: 50vh;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.headerflex{
+	background-color: #FF66FF;
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.headerflex > div{
+	background-color: #FFCCFF;
+	margin: 0px 10px;
+	height: 70px;
+	flex-basis: 140px;
+}
+.headerflex > :first-child{
+	margin-right: auto;
+}
 
-.flex>div{
-	background-color: #fff;
-	margin: 5px;
-	font-size: 30px;
-	flex-basis: 100px;
+.main{
+	display:flex;
+  	justify-content:center;
+}
+.mainside{
+	background-color:#d8ffb6;
+    width:300px;
+}
 
+.mainflex{
+	background-color: #00CC33;
+	padding: 20px;
+	max-width: 700px;
+	flex-wrap: wrap;
+	justify-content: center;
+	display: flex;
+	flex-grow:1;
+}
+.mainflex > div{
+	background-color: #FFFF33;
+	margin: 10px;
+	height: 130px;
+	flex-basis: 200px;
+}
+.footerflex{
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #00CCFF;
+}
+.footerflex > div{
+	background-color: #99FFFF;
+	height: 40px;
+	margin: 10px;
+	max-width: 600px;
+	width: 45%;
 }
